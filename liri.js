@@ -123,4 +123,5 @@ function liriSwitch() {
             break;
     };
 };
+
 liriSwitch();
