@@ -3,7 +3,7 @@
 The liribot takes input via **command prompt/terminal** and calls an api based on this input.\
 The APIs utilized by this project are called via Node and include Twitter, OMDB, and Spotify.\
 Also utilizes the Node Filesystem.\
-The responses are logged in the command line.\
+The responses are logged in the command line.
 
 ## Movie Info
 When "movie-this" is searched, all following arguments are used to determine the movie searched via the OMDB api.\
@@ -31,10 +31,11 @@ Data returned includes:
 + Song's Album
 
 ## Tweets
-When "my-tweets" is searched, no further arguments are necessary. Liribot compiles 20 tweets from the user defined in a .env file via the Twitter api.
-![cmdline](https://github.com/bshin19/liribot/blob/master/assets/images/tweets.PNG) 
-The response data is parsed and logged.
-![cmdline](https://github.com/bshin19/liribot/blob/master/assets/images/tweetsresponse.PNG)
+When "my-tweets" is searched, no further arguments are necessary.\
+Liribot compiles 20 tweets from the user defined in a .env file via the Twitter api.\
+![cmdline](https://github.com/bshin19/liribot/blob/master/assets/images/tweets.PNG) \
+The response data is parsed and logged.\
+![cmdline](https://github.com/bshin19/liribot/blob/master/assets/images/tweetsresponse.PNG) \
 Data returned includes:
 + Tweet body
 + Tweet's Post Date 
@@ -50,7 +51,7 @@ The second argument in random.txt determines what movie or song is searched and 
 
 ## Potential Updates
 ### General
-1. Log responses to a file\
+1. Log responses to a file
 1. Add OR values to each search to make searching easier (eg my-tweets || tweets)
 
 ### Tweets
