@@ -2,7 +2,6 @@ require("dotenv").config();
 var keys = require("./keys");
 var Spotify = require('node-spotify-api');
 var Twitter = require('twitter');
-var Omdb = require("omdb");
 var request = require("request");
 var fs = require("fs");
 
@@ -57,6 +56,16 @@ function spotReturn() {
 switch (lirireq) {
     //Displays last 20 tweets and when they were created in the term/bash window
     case "my-tweets":
+        client.get('statuses/user_timeline', {
+            screen_name: "@bradyshinners",
+            q: 'node.js',
+            count: 20
+        }, function(error, tweets, response) {
+            for (var i = 0; i < tweets.length; i++) {
+                console.log(tweets[i].text);
+                console.log("Posted on " + tweets[i].created_at);
+            };
+        });
 
         break;
 
